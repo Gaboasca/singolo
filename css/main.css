@@ -17,6 +17,7 @@ body {
 
 .page-wrap {
 	min-height: 100%;
+	height: 100px;
 	/* equal to footer height */
 	padding-bottom: -90px; 
 }
@@ -63,6 +64,7 @@ HEADER
 
 .l-container {
 	width: 75%;
+	height: 100%;
   	margin: 0 auto;
 }
 
@@ -243,7 +245,7 @@ First Section
 	position:relative;
     width: 100%;
     max-width: 1600px;
-    height:auto;    
+    height: 100%;  
     margin:0 auto;
     overflow: hidden;
 }
@@ -295,7 +297,7 @@ First Section
 
 .slider {
 	position: relative;
-	height: inherit;
+	height: 100%; 
 }
   
 .slider__wrap {
@@ -310,7 +312,7 @@ First Section
 
 .slider__wrap__item {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: 100%;  
 }
 
