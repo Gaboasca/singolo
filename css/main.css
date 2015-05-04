@@ -478,24 +478,42 @@ Third Section
 	margin-right: 0;
 }
 
-.category-item-thumbnail {
-	width: 22%;
+.item > img {
+	width: 23%;
+	height: auto;
 	margin-top: 20px;
 	text-decoration: none;
 }
 
-.overlay-item {
-	width: 40%;
+.overlay-content {
 	display: none;
 	position: absolute;
 	top: 30%;
 	left: 50%;
+	width: 410px;
+	height: auto;
 	transform: translate(-50%, -50%);
 	transition: top .5s ease;
 }
-.overlay-item.active-overlay{
+
+.overlay-content.active-overlay {
 	top: 50%;
 }
+
+.overlay-content > img {
+	width: 100%;
+	height: auto;
+}
+
+.overlay-image-title {
+	display: none;
+	height: 25px;
+	text-align: center;
+	color: white;
+  	font-size: 20px;
+}
+
+
 
 /* 
 =============

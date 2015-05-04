@@ -166,7 +166,7 @@
   		display: block;
   	}
 
-  	.category-item-thumbnail {
+  	.item img:first-child {
   		width: 42%;
   	}
 }

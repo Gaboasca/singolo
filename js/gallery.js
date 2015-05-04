@@ -42,23 +42,27 @@ Gallery.prototype.filter = function(category) {
 
 Gallery.prototype.expandImage = function() {
     var img_overlay = $('.img-overlay');
-    var overlay_item = $('.overlay-item');
+    var overlay_item = $('.item img:last-child');
+    var overlay_content = $('.overlay-content')
+    var overlay_image_title = $('.overlay-image-title');
+
 
     this.items.on('click', function(ev) {
         ev.preventDefault();
         img_overlay.fadeIn();
-        $(this).find(overlay_item).fadeIn().addClass('active-overlay');
+        $(this).find(overlay_content).fadeIn().addClass('active-overlay');
+        overlay_image_title.text($(ev.target).attr('alt')).show();
     });
 
     img_overlay.on('click', function() {
         img_overlay.fadeOut();
-        overlay_item.fadeOut().removeClass('active-overlay');
+        overlay_content.fadeOut().removeClass('active-overlay');
     });
 
     $(window).on('keyup',function(e) {
         if (e.keyCode == 27) {
             img_overlay.fadeOut();
-            overlay_item.fadeOut().removeClass('active-overlay');
+            overlay_content.fadeOut().removeClass('active-overlay');
         }
     });
 };

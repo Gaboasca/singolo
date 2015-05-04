@@ -22,72 +22,22 @@
 			            <div class="category-wrap">
 							<div class="img-overlay"></div>
 
-							<?php 
+							<?php 						 
+
 								$args = array('post_type' => 'projects');
 								$query = new WP_Query($args);
 								while($query -> have_posts()) : $query -> the_post(); ?>
-		            				<a class="item" data-filter='["web","graphic","art"]' href="#">
+
+		            				<a class="item" data-filter='' href="#">
 										<?php the_post_thumbnail('thumbnail'); ?>
-										<img class="overlay-item" src="<?php bloginfo('template_url'); ?>/img/gallery/gal1.png" alt="">   
+										<div class="overlay-content">
+											<?php the_post_thumbnail('thumbnail'); ?>  
+											<div class="overlay-image-title"></div>
+										</div>
 									</a>
+
 							<?php endwhile; ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-			              <!-- <a class="item" data-filter='["web","art"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal2.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal2.png" alt="">    
-			              </a>
-			              <a class="item" data-filter='["graphic","art"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal3.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal3.png" alt="">  
-			              </a>
-			              <a class="item" data-filter='["graphic"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal4.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal4.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["art"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal5.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal5.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["web"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal6.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal6.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["art"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal7.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal7.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["graphic","art"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal8.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal8.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["web"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal9.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal9.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["graphic"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal10.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal10.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["web","graphic"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal11.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal11.png" alt="">
-			              </a>
-			              <a class="item" data-filter='["graphic"]' href="#">
-			                <img class="category-item-thumbnail" src="resources/img/thumbnails/gal12.png" alt="" />
-			                <img class="overlay-item" src="resources/img/gallery/gal12.png" alt="">
-			              </a> -->
 			            </div>
 			          </div>				
 
