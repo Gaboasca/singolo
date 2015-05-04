@@ -1,0 +1,175 @@
+html,
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-family: 'Lato', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.l-container {
+	width: 75%;
+  	margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 77px;
+}
+
+.footer {
+
+	
+}
+
+/* 
+===================================================
+HEADER
+===================================================
+*/
+
+
+.header__items,
+.nav-anchor ul li a {
+	color:  #ffffff;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header__items,
+.nav-anchor ul li a,
+.copywrite {
+	font-size: 11.664px;
+}
+
+.header__items:hover,
+.asterix,
+.nav-anchor ul li a:hover {
+	color:  #f06c64;
+}
+
+.header__items:hover .asterix {
+	color: #fff;
+}
+
+.logo {
+	font-size: 24.284px;
+}
+
+.nav-anchor div:last-child {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 17px;
+	margin: auto;
+}
+
+.nav-anchor ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-anchor ul li {
+	display: inline-block;
+}
+
+.nav-anchor ul li:after {
+	content: ".";
+	margin: 0 10px 0 12px;
+	vertical-align: top;
+	color:  #494e62;
+	font-size: 11.664px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-anchor ul li:last-child:after {
+	display: none;
+}
+
+
+
+
+
+
+
+
+#wpcf7-f107-o1{
+	display: inline-block;
+	width: 65%;
+}
+.wpcf7-submit {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: #f0d8d9;
+	background-color: #d6564f;
+}
+.wpcf7-submit:hover {
+	background-color: #DA6761;
+}
+.wpcf7-submit:active {
+	background-color: #C14D47;
+}
+
+/* 
+===================================================
+FOOTER
+===================================================
+*/
+
+.copywrite {
+	padding: 16px 0;
+	color:  #666d89;
+	font-weight: 400;
+}
+
+.l-social-media {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 35px;
+	margin: auto;
+}
+
+.social-media {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 1px 5px;
+	border: 2px solid #666d89;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.social-media:hover {
+	background-color: #F0F0F3;
+}
+
+.social-media:active {
+	background-color: #C2C5D0;
+}
+
+.social-media__img {
+	margin-top: 30%;
+	vertical-align: middle;
+}
