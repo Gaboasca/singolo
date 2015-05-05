@@ -35,6 +35,7 @@
 		            				<a class="item" data-filter='<?php echo "[".'"'.$terms_space_implode.'"'."]"; ?>' href="#">
 										<?php the_post_thumbnail('thumbnail'); ?>
 										<div class="overlay-content">
+											<div class="overlay-image-close">X</div>
 											<?php the_post_thumbnail('thumbnail'); ?>  
 											<div class="overlay-image-title"></div>
 										</div>

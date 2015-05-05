@@ -20,7 +20,7 @@
 					            </div>
 					            <div class="section__block__info section__block__info--primary">
 					              <h3 class="section__block__info__title"> <?php the_title(); ?> </h3>
-					              <p class="section__block__info__description"> <?php echo get_the_content(); ?> </p>
+					              <p class="section__block__info__description"> <?php the_excerpt(); ?> </p>
 					            </div>
 					            <div class="l-navigation l-navigation--section l-social-media">
 
@@ -37,7 +37,7 @@
 					                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="mediaImg">
 					              </a>
 
-					              
+
 					            </div>
 					        </div>
 						<?php endwhile; ?>

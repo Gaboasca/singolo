@@ -245,3 +245,21 @@ function smedia_footer_create_post_type() {
 	//flush_rewrite_rules();
 }
 add_action( 'init', 'smedia_footer_create_post_type' );
+
+
+
+
+ 
+function et_excerpt_length($length) {
+    return 15;
+}
+add_filter('excerpt_length', 'et_excerpt_length');
+
+ 
+function et_excerpt_more($more) {
+    global $post;
+    return '<div class="view-full-post"><a href="'. get_permalink($post->ID) . '" class="view-full-post-btn">View Full Post</a></div>';
+}
+add_filter('excerpt_more', 'et_excerpt_more');
+
+

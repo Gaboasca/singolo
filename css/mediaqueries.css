@@ -67,13 +67,17 @@
 		height: 0;
 	}
 
-	.slider__wrap__item__content img {
-	  
+	.section__block-aside {
+		width: 100%;
 	}
 
 	.section__block {
 	  width: 48.33%;
 	  margin-top: 23px;
+	}
+
+	.section__block--single {
+		width: 100%;
 	}
 
 	.section__block__avatar {
@@ -86,6 +90,11 @@
 		margin: 0 auto;
 	}
 
+	.section__block--primary-single {
+		width: 100%;
+		padding-left: 0;
+	}
+
 	.section__block__info {
 	  width: 100%;
 	}
@@ -95,6 +104,7 @@
 	}
 
 	.section__block__avatar--primary {
+		display: inline-block;
 		width: 100%;
 	}
 
@@ -105,6 +115,10 @@
 
 	.section__block__avatar--primary img {
 	  width: 60%;
+	}
+
+	.section__block__info__title--single-profiles {
+		display: none;
 	}
 
 	.category-item {
@@ -150,6 +164,7 @@
 	.l-social-media--media {
 		padding-bottom: 19px;
 		margin-bottom: 0;
+		
 	}
 
 	.contact {

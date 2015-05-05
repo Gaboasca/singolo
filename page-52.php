@@ -20,7 +20,12 @@
 								</div>
 								<div class="section__block__info">
 								  <h3 class="section__block__info__title"> <?php the_title(); ?> </h3>
-								  <p class="section__block__info__description"> <?php echo get_the_content(); ?> </p>
+								  <?php
+									  $myExcerpt = get_the_excerpt();
+									  $tags = array("<p>", "</p>");
+									  $myExcerpt = str_replace($tags, "", $myExcerpt);
+								  ?>
+								  <p class="section__block__info__description"> <?php echo $myExcerpt; ?> </p>
 								</div>
 							</div> 
 						<?php endwhile; ?>

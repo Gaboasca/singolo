@@ -114,15 +114,7 @@ FOOTER
 	margin: auto;
 }
 
-.social-media {
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	margin: 1px 5px;
-	border: 2px solid #666d89;
-	border-radius: 50%;
-	text-align: center;
-}
+
 
 .social-media:hover {
 	background-color: #F0F0F3;

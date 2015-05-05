@@ -45,6 +45,7 @@ Gallery.prototype.expandImage = function() {
     var overlay_item = $('.item img:last-child');
     var overlay_content = $('.overlay-content')
     var overlay_image_title = $('.overlay-image-title');
+    var overlay_image_close = $('.overlay-image-close');
 
 
     this.items.on('click', function(ev) {
@@ -52,6 +53,7 @@ Gallery.prototype.expandImage = function() {
         img_overlay.fadeIn();
         $(this).find(overlay_content).fadeIn().addClass('active-overlay');
         overlay_image_title.text($(ev.target).attr('alt')).show();
+        overlay_image_close.show().css('display', 'inline-block');
     });
 
     img_overlay.on('click', function() {
@@ -64,6 +66,11 @@ Gallery.prototype.expandImage = function() {
             img_overlay.fadeOut();
             overlay_content.fadeOut().removeClass('active-overlay');
         }
+    });
+
+    overlay_image_close.on('click', function() {
+        img_overlay.fadeOut();
+        overlay_content.fadeOut().removeClass('active-overlay');
     });
 };
 
