@@ -9,16 +9,16 @@
 			            <h3 class="section__block__info__title section__block__info__title--single section__block__info__title--single-profiles"> <?php the_title(); ?> </h3>
 			            <div class="l-navigation l-navigation--section l-social-media l-social-media--single">
 
-			              <a class="social-media social-media--primary" href="#">
+			              <a class="social-media social-media--primary" href="https://www.facebook.com/">
 			                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="mediaImg">
 			              </a>
-			              <a class="social-media social-media--primary" href="#">
+			              <a class="social-media social-media--primary" href="https://plus.google.com/">
 			                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/google.png" alt="mediaImg">
 			              </a>
-			              <a class="social-media social-media--primary" href="#">
+			              <a class="social-media social-media--primary" href="https://twitter.com/">
 			                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="mediaImg">
 			              </a>
-			              <a class="social-media social-media--primary" href="#">
+			              <a class="social-media social-media--primary" href="https://www.linkedin.com/uas/login">
 			                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="mediaImg">
 			              </a>
 			            </div>

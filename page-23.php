@@ -24,16 +24,16 @@
 					            </div>
 					            <div class="l-navigation l-navigation--section l-social-media">
 
-					              <a class="social-media social-media--primary" href="#">
+					              <a class="social-media social-media--primary" href="https://www.facebook.com/">
 					                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="mediaImg">
 					              </a>
-					              <a class="social-media social-media--primary" href="#">
+					              <a class="social-media social-media--primary" href="https://plus.google.com/">
 					                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/google.png" alt="mediaImg">
 					              </a>
-					              <a class="social-media social-media--primary" href="#">
+					              <a class="social-media social-media--primary" href="https://twitter.com/">
 					                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="mediaImg">
 					              </a>
-					              <a class="social-media social-media--primary" href="#">
+					              <a class="social-media social-media--primary" href="https://www.linkedin.com/uas/login">
 					                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="mediaImg">
 					              </a>
 

@@ -459,6 +459,26 @@ Second Section
 	font-size: 12px;
 	line-height: 24px;
 }
+
+.view-full-post-btn {
+	display:inline-block;
+	padding:8px 16px;
+	margin-top:10px;
+	border:1px solid #d8dcdc;
+	border-radius:10px;
+	color:#454545;
+	font-size:16px;
+	font-style:italic;
+	font-family:Georgia,serif;
+	text-decoration: none;
+}
+
+.view-full-post-btn:hover {
+	background: #454545;
+	border:1px solid #000000;
+	color:#FFFFFF;
+	transition:all .3s ease;
+}
 /* 
 =============
 Third Section
@@ -633,7 +653,7 @@ FOOTER
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	margin: 1px 5px;
+	margin: 1px 0;
 	border: 2px solid #666d89;
 	border-radius: 50%;
 	text-align: center;
