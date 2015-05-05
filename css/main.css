@@ -17,7 +17,6 @@ body {
 
 .page-wrap {
 	min-height: 100%;
-	height: 100px;
 	/* equal to footer height */
 	padding-bottom: -90px; 
 }
@@ -245,7 +244,7 @@ First Section
 	position:relative;
     width: 100%;
     max-width: 1600px;
-    height: 100%;  
+    height: 500px;
     margin:0 auto;
     overflow: hidden;
 }
@@ -322,9 +321,9 @@ First Section
 	text-align: center;	
 }
 
-.slider__wrap__item__content__img {
-	display: inline-block;
-	width: 27%;
+.slider__wrap__item__content img{
+	width: 100%;
+	
 } 
 
 /* 

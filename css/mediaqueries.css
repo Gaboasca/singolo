@@ -67,8 +67,8 @@
 		height: 0;
 	}
 
-	.slider__wrap__item__content__img {
-	  width: 100px;
+	.slider__wrap__item__content img {
+	  
 	}
 
 	.section__block {
@@ -177,12 +177,6 @@
 	.nav-anchor div:last-child { width: 320px; }
 
 	.header__items--menu { text-align: left; }
-
-
-
-
-
-
 
 	.section__block { width: 100%; }
 
