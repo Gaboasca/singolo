@@ -323,7 +323,7 @@ First Section
 
 .slider__wrap__item__content img{
 	width: 100%;
-	
+	height: auto;
 } 
 
 /* 
