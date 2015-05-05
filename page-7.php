@@ -23,12 +23,16 @@
 							<div class="img-overlay"></div>
 
 							<?php 						 
-
 								$args = array('post_type' => 'projects');
 								$query = new WP_Query($args);
 								while($query -> have_posts()) : $query -> the_post(); ?>
 
-		            				<a class="item" data-filter='' href="#">
+									<?php 
+										$terms = wp_get_post_terms( $post->ID, 'gallery_category', array("fields" => "slugs") ); 
+										$terms_space_implode = implode('","', $terms);
+									?>
+
+		            				<a class="item" data-filter='<?php echo "[".'"'.$terms_space_implode.'"'."]"; ?>' href="#">
 										<?php the_post_thumbnail('thumbnail'); ?>
 										<div class="overlay-content">
 											<?php the_post_thumbnail('thumbnail'); ?>  

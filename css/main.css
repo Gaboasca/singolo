@@ -492,6 +492,7 @@ Third Section
 	left: 50%;
 	width: 410px;
 	height: auto;
+	box-shadow: 0px 0px 10px black;
 	transform: translate(-50%, -50%);
 	transition: top .5s ease;
 }
@@ -507,10 +508,12 @@ Third Section
 
 .overlay-image-title {
 	display: none;
-	height: 25px;
-	text-align: center;
+	height: 54px;
 	color: white;
   	font-size: 20px;
+  	line-height: 54px;
+  	text-align: center;
+  	background-color: rgba(10,10,10,0.8);
 }
 
 
