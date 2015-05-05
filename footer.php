@@ -5,18 +5,16 @@
 			          <h4 class="copywrite">&#64; Copyright 2013 · by PSDchat.com</h4>
 			        </div>
 			        <div class="l-social-media l-social-media--media">
-			          <a class="social-media" href="#">
-			            <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="mediaImg">
-			          </a>
-			          <a class="social-media" href="#">
-			            <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/google.png" alt="mediaImg">
-			          </a>
-			          <a class="social-media" href="#">
-			            <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="mediaImg">
-			          </a>
-			          <a class="social-media" href="#">
-			            <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="mediaImg">
-			          </a>
+
+			        	<?php 
+						$args = array('post_type' => 'media');
+						$query = new WP_Query($args);
+						while($query -> have_posts()) : $query -> the_post(); ?>
+							<a class="social-media" href="<?php echo get_the_content(); ?>">
+					            <?php the_post_thumbnail('thumbnail'); ?>
+					        </a>
+						<?php endwhile; ?>   
+
 			        </div>
 				</div>
 			</footer>

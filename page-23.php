@@ -23,6 +23,7 @@
 					              <p class="section__block__info__description"> <?php echo get_the_content(); ?> </p>
 					            </div>
 					            <div class="l-navigation l-navigation--section l-social-media">
+
 					              <a class="social-media social-media--primary" href="#">
 					                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="mediaImg">
 					              </a>
@@ -35,6 +36,8 @@
 					              <a class="social-media social-media--primary" href="#">
 					                <img class="social-media__img" src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="mediaImg">
 					              </a>
+
+					              
 					            </div>
 					        </div>
 						<?php endwhile; ?>

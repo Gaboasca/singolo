@@ -106,7 +106,6 @@ function profile_create_post_type() {
 }
 add_action( 'init', 'profile_create_post_type' );
 
-
 function slide_create_post_type() {
 	$labels = array(
 		'name' => 'Slider',
@@ -208,3 +207,41 @@ add_action( 'init', 'gallery_create_post_type' );
 	}
 	add_action('init', 'taxonomies_gallery', 0 );
 
+function smedia_footer_create_post_type() {
+	$labels = array(
+		'name' => 'SMedia Footer',
+		'singular_name' => 'SMedia Footer',
+		'add_new' => 'Add New',
+		'all_items' => 'All medias',
+		'add_new_item' => 'Add New Social Media',
+		'edit_item' => 'Edit media',
+		'new_item' => 'New Social Media',
+		'view_item' => 'View Social Media',
+		'search_items' => 'Search social medias',
+		'not_found' => 'No social media found',
+		'not_found_in_trash' => 'No social media found in trash',
+		'parent_item_colon' => 'Parent social media'
+	);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'rewrite' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'excerpt',
+			'thumbnail',
+			//'author',
+			//'trackbacks',
+			//'custom-fields',
+			//'comments',
+			'revisions'
+			//'page-attributes', // (menu order, hierarchical must be true to show Parent option)
+			//'post-formats',
+		)
+	);
+
+	register_post_type( 'media', $args );
+	//flush_rewrite_rules();
+}
+add_action( 'init', 'smedia_footer_create_post_type' );
